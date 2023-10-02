@@ -1,0 +1,7 @@
+<p>MY IMAGES</p>
+
+<div *ngFor="let image of images">
+    <img [src]="image.data" [alt]="image.name">
+    <p>{{image.name}}</p>
+
+</div>

@@ -1,0 +1,27 @@
+
+
+
+<div>
+  <p>MyEccommerce</p>
+<h1>HOME PAGE WORKS</h1>
+
+
+<h1>Welcome, {{ username }}!</h1>
+
+</div>
+
+
+<div>
+  <ng-container *ngFor="let item of productList">
+
+    <img src="{{item.imageUrl}}" alt="">
+    <h2>{{item.username}}</h2>
+
+
+  </ng-container>
+
+</div>
+
+
+
+

@@ -1,0 +1,21 @@
+<p>my-ash works!</p>
+
+
+
+<div>
+  <button  (click) = "showButtons()" *ngIf="showbutton ">
+    ClickMe
+  </button>
+
+</div>
+
+
+<div>
+
+  <button (click)="onButtonClicked()"  [ngClass]="{'clicked' : isClicked }" *ngIf="!showbutton">
+    Button
+  </button>
+
+</div>
+
+

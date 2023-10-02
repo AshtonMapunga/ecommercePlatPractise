@@ -1,0 +1,22 @@
+<div class="container">
+  <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="Enter your username"  [(ngModel)] = "client.username" name="username">
+        <input type="password" placeholder="Enter your password" [(ngModel)] = "client.password" name="password">
+        <div *ngIf="errormssg" class="alert alert-danger">{{ errormssg }}</div>
+
+        <a href="#">Forgot password?</a>
+        <input type="submit" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+
+
+
+</div>

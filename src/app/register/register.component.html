@@ -1,0 +1,19 @@
+<div class="containerr">
+    <input type="checkbox" id="check">
+    <div class="registration form">
+      <header>Signup</header>
+        <form  (ngSubmit)="onSubmit()" >
+          <input  type="text" placeholder="Enter your email"   [(ngModel)] = "client.email" name="email">
+          <input type="text" placeholder="Create a Username" [(ngModel)] = "client.username" name="username" >
+          <input type="password" placeholder="Create your password" [(ngModel)] = "client.password" name="password" >
+          <input type="submit" class="button" value="Signup">
+        </form>
+        <div class="signup">
+          <span class="signup">Already have an account??
+           <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
